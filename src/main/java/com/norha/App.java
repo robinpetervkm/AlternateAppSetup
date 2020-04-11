@@ -12,9 +12,12 @@ import javax.ws.rs.core.MediaType;
 @Singleton
 public class App {
 	
+	@QueryParam("x") String x;
+	@PathParam("w") String demo;
+	
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
-	public String demo (@QueryParam("x") String x, @PathParam("w") String demo) {
+	public String demo () {
 		return "X = "+x+" Demo = "+demo;
 	}
 
