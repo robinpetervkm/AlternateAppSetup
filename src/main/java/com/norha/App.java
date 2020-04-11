@@ -9,7 +9,6 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
 @Path("app/{w}")
-@Singleton
 public class App {
 	
 	@QueryParam("x") String x;
