@@ -10,9 +10,8 @@ public class App {
 	
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
-	public String demo () {
-		System.out.println("Name :: "+ new Name("Robin","Peter"));
-		return "I-love-rest";
+	public Name demo () {
+		return new Name("Robin","Peter");
 	}
 
 }
